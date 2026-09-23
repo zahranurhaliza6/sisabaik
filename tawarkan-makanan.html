@@ -1,57 +1,40 @@
 <!doctype html>
-
 <html lang="id">
-
     <head>
-
         <meta charset="utf-8">
-
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1"
         >
-
         <meta
             name="description"
             content="Formulir prototipe untuk mencatat makanan berlebih yang akan ditawarkan melalui SisaBaik."
         >
-
         <title>Tawarkan Makanan | SisaBaik</title>
 
         <link rel="stylesheet" href="styles.css">
-
     </head>
-
     <body>
-
         <a class="skip-link" href="#konten-utama">
             Lewati ke konten utama
         </a>
-
         <header class="site-header">
-
             <div class="container header-layout">
-
                 <p class="brand">
                     SisaBaik
                 </p>
-
                 <nav aria-label="Navigasi utama">
-
                     <ul class="nav-list">
-
                         <li>
                             <a href="index.html">
                                 Beranda
                             </a>
                         </li>
-
                         <li>
                             <a href="daftar-penyedia.html">
                                 Daftar sebagai penyedia
                             </a>
                         </li>
-
                         <li>
                             <a
                                 href="tawarkan-makanan.html"
@@ -60,60 +43,44 @@
                                 Tawarkan makanan
                             </a>
                         </li>
-
                     </ul>
-
                 </nav>
-
             </div>
-
         </header>
-
         <main
             class="container"
             id="konten-utama"
             tabindex="-1"
         >
-
             <div class="page-heading">
-
                 <h1>
                     Catat penawaran makanan berlebih
                 </h1>
-
                 <p class="lead">
                     Gunakan data fiktif selama praktikum. Jangan menawarkan makanan yang
                     rusak, kedaluwarsa, tercemar, atau tidak aman dikonsumsi.
                 </p>
-
                 <p
                     class="required-note"
                     id="petunjuk-wajib"
                 >
                     Kolom bertanda <strong>*</strong> wajib diisi.
                 </p>
-
             </div>
-
             <form
-                class="form-card"
+                id="form-penawaran"
                 action="tawarkan-makanan.html"
                 method="get"
                 aria-describedby="petunjuk-wajib"
             >
-
                 <fieldset class="form-section">
-
                     <legend>
                         Identitas makanan
                     </legend>
-
                     <p>
-
                         <label for="nama-makanan">
                             Nama makanan *
                         </label><br>
-
                         <input
                             type="text"
                             id="nama-makanan"
@@ -122,15 +89,11 @@
                             maxlength="120"
                             required
                         >
-
                     </p>
-
                     <p>
-
                         <label for="kategori">
                             Kategori *
                         </label><br>
-
                         <select
                             id="kategori"
                             name="kategori"
